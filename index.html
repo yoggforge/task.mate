@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task.mate - Productivity Extension</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .hero {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .feature {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .feature h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: #1e293b; /* Slightly darker heading color */
+        }
+        .feature p {
+            color: #4b5563; /* Slightly darker paragraph color */
+        }
+        .installation {
+            margin-bottom: 2rem;
+        }
+        .installation h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+             color: #1e293b;
+        }
+        .installation p{
+            color: #4b5563;
+            margin-bottom: 1rem;
+        }
+
+        .button-primary {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            background-color: #6366f1;
+            color: white;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 1rem;
+        }
+        .button-primary:hover {
+            background-color: #4338ca;
+        }
+
+        .screenshot {
+            width: 100%;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280;
+            font-size: 0.875rem;
+        }
+        /* Tailwind Overrides (Optional - for demonstration) */
+        .bg-gradient-to-r {
+            background-image: linear-gradient(to right, #f0f2ff, #e0e7ff);
+        }
+        .text-blue-600 {
+            color: #2563eb;
+        }
+        .font-semibold {
+            font-weight: 600;
+        }
+        .text-gray-700{
+            color: #374151
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-r">
+    <div class="container">
+        <header class="hero">
+            <img src="icons/logo_w_name.png" alt="Task.mate Logo" class="mx-auto mb-4" style="max-width: 200px;">
+            <h1 class="text-3xl font-semibold text-blue-600 mb-2">Task.mate - Pure Productivity</h1>
+            <p class="text-gray-700">A minimal, offline todo list extension for Chrome.</p>
+            <a href="#" class="button-primary">Download Now</a> </header>
+
+        <main>
+            <section class="features">
+                <div class="feature">
+                    <h3>Seamless Integration</h3>
+                    <p>Task.mate stays with you as you browse.  No need to switch between apps.</p>
+                </div>
+                <div class="feature">
+                    <h3>Key Features</h3>
+                    <p>Manage your tasks efficiently: edit, reorder, check, delete, and restore.</p>
+                </div>
+                <div class="feature">
+                    <h3>Data Control</h3>
+                    <p>  Export your data for backup or import it to another device.
+                    </p>
+                </div>
+            </section>
+
+            <section class="installation">
+                <h2>Installation</h2>
+                <p>
+                    Install Task.mate from the Chrome Web Store to boost your productivity.
+                </p>
+                 <a href="#" class="button-primary">Visit the Chrome Web Store</a>  </section>
+
+            <section class="screenshots">
+                <h2>Screenshots</h2>
+                <img src="screenshot1.png" alt="Task.mate Screenshot 1" class="screenshot">
+                <img src="screenshot2.png" alt="Task.mate Screenshot 2" class="screenshot">
+                </section>
+        </main>
+
+        <footer class="footer">
+            <p>Developed by [Your Name/Organization].  MIT License | <a href="https://github.com/yourusername/taskmate" target="_blank" rel="noopener noreferrer">Source Code on GitHub</a></p>  </footer>
+    </div>
+    <script>
+        // Optional: You can add JavaScript here for interactive elements, if needed.
+        // For example, to open the Chrome Web Store link in a new tab:
+        const downloadButton = document.querySelector('.button-primary');
+        if (downloadButton) {
+            downloadButton.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.open('https://chrome.google.com/webstore/category/extensions', '_blank'); // Replace with your extension's actual URL
+            });
+        }
+    </script>
+</body>
+</html>
