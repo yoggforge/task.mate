@@ -90,5 +90,8 @@
             font-weight: 600;
             color: #112651;
         }
-
+	table tbody td {
+            font-weight: 400;
+             color: #112651;
+        }
 
