@@ -86,7 +86,7 @@
         
         /* Alternate row coloring */
         table tbody tr:nth-child(even) {
-            background-color: #fafafa;
+            background-color: #112651;
         }
         
         /* Bold feature names */
